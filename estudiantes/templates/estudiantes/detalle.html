@@ -1,0 +1,7 @@
+{% extends 'estudiantes/base.html' %} {% block content %}
+<p><strong>Nombre:</strong> {{ est.nombre }}</p>
+<p><strong>Carrera:</strong> {{ est.carrera }}</p>
+<p><strong>Ciclo:</strong> {{ est.ciclo }}</p>
+<p><strong>Correo:</strong> {{ est.correo }}</p>
+<a class="btn btn-secondary" href="{% url 'estudiantes:lista' %}">Volver</a>
+{% endblock %}
